@@ -8,10 +8,10 @@ class Basic(lightbulb.Plugin):
     @lightbulb.command()
     async def ping(self, ctx):
         await ctx.reply("Pong!")
-    
+        
     @lightbulb.command()
-    async def ihatedogs(self, ctx):
-        await ctx.reply("Max hates the dog")
+    async def squared(self, ctx, num: int): # Taking input here. Just add a new argument and that will be the input
+        await ctx.reply(f"Squared of {num} is {num**2}")
         
 def load(bot):
     bot.add_plugin(Basic(bot))
