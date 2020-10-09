@@ -1,7 +1,10 @@
 import os
 import importlib
-import lightbulb 
+import lightbulb
+import logging
 
+
+logging.basicConfig(level=logging.DEBUG, filename='bot.log', filemode='w')
 bot = lightbulb.Bot(token=os.environ['TOKEN'], prefix="f.")
 
 """Looping over all the files in the plugins folder"""
