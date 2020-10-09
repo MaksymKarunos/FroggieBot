@@ -2,7 +2,7 @@ import os
 import importlib
 import lightbulb 
 
-bot = lightbulb.Bot(token=os.environ['TOKEN'], prefix="!")
+bot = lightbulb.Bot(token=os.environ['TOKEN'], prefix="f.")
 
 """Looping over all the files in the plugins folder"""
 for i in os.listdir('./plugins'):
