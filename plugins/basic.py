@@ -11,7 +11,8 @@ class Basic(lightbulb.Plugin):
         
     @lightbulb.command()
     async def squared(self, ctx, num: int): # Taking input here. Just add a new argument and that will be the input
-        await ctx.reply(f"Squared of {num} is {num**2}")
+        await ctx.reply(f"Square of {num} is {num**2}")
+    
         
 def load(bot):
     bot.add_plugin(Basic(bot))
